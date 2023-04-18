@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scr", "Scr", "{231F7180-348
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IeuanWalker.Maui.PdfViewer", "Scr\IeuanWalker.Maui.PdfViewer\IeuanWalker.Maui.PdfViewer.csproj", "{118F4F23-74AB-4E94-9404-765D7E1AF5BF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HybridWebView", "..\..\Github-Fork\MauiCSharpInteropWebView\HybridWebView\HybridWebView.csproj", "{C30F012B-3FB8-429D-AEFE-660EFE1966C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{118F4F23-74AB-4E94-9404-765D7E1AF5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{118F4F23-74AB-4E94-9404-765D7E1AF5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{118F4F23-74AB-4E94-9404-765D7E1AF5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30F012B-3FB8-429D-AEFE-660EFE1966C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30F012B-3FB8-429D-AEFE-660EFE1966C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30F012B-3FB8-429D-AEFE-660EFE1966C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30F012B-3FB8-429D-AEFE-660EFE1966C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4961079B-A9C1-4F18-A363-BEA6CBAA5735} = {F0F2727E-38C4-43CF-AC21-698F937724A0}
 		{118F4F23-74AB-4E94-9404-765D7E1AF5BF} = {231F7180-348A-4184-ABAF-8EEDC4550B91}
+		{C30F012B-3FB8-429D-AEFE-660EFE1966C8} = {231F7180-348A-4184-ABAF-8EEDC4550B91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B32FEAA-76FF-4426-9324-7E4FD9C5F3D2}

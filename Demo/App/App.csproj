@@ -42,18 +42,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Raw\Dissertation.pdf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="IeuanWalker.Maui.StateButton" Version="1.1.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\..\..\..\Github-Fork\MauiCSharpInteropWebView\HybridWebView\HybridWebView.csproj" />
 	  <ProjectReference Include="..\..\Scr\IeuanWalker.Maui.PdfViewer\IeuanWalker.Maui.PdfViewer.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="Resources\Fonts\" />
 	  <Folder Include="Resources\Images\" />
-	  <Folder Include="Resources\Raw\" />
 	</ItemGroup>
 
 	<ItemGroup>

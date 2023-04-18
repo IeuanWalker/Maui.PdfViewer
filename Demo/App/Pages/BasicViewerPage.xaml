@@ -2,10 +2,10 @@
 <ContentPage x:Class="App.Pages.BasicViewerPage"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:hwv="clr-namespace:HybridWebView;assembly=HybridWebView"
              Title="BasicViewerPage">
-    <VerticalStackLayout>
-        <Label HorizontalOptions="Center"
-               Text="BasicViewer"
-               VerticalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="*,*">
+        <WebView Grid.Row="0" Source="pdfjs/web/viewer.html?file=../../Dissertation.pdf" />
+        <hwv:HybridWebView Grid.Row="1" MainFile="pdfjs/web/viewer.html?file=../../Dissertation.pdf" HybridAssetRoot="" />
+    </Grid>
 </ContentPage>

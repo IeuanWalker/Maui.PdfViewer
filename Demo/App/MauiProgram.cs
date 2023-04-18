@@ -10,7 +10,18 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseStateButton();
+			.UseStateButton()
+			.Services.AddHybridWebView();
+
+		Microsoft.Maui.Handlers.WebViewHandler.Mapper.AppendToMapping("MyCustomization", (handler, view) =>
+		{
+#if ANDROID
+			Android.Webkit.WebView webView = handler.PlatformView;
+			webView.Settings.JavaScriptEnabled = true;
+			webView.Settings.AllowFileAccess = true;
+			webView.Settings.AllowUniversalAccessFromFileURLs = true;
+#endif
+		});
 
 #if DEBUG
 		builder.Logging.AddDebug();

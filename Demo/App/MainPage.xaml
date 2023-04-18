@@ -6,7 +6,12 @@
              Padding="{StaticResource PagePadding}">
     <ContentPage.Content>
         <VerticalStackLayout Spacing="20" VerticalOptions="Center">
-            <controls:CustomButton Clicked="BasicViewerBtn_Clicked" Text="Basic Viewer" />
+            <controls:CustomButton Clicked="BasicViewerBtn_Clicked" Text="Basic" />
+            <controls:CustomButton Text="Full featured" />
+            <controls:CustomButton Text="Embedded" />
+            <controls:CustomButton Text="External" />
+            <controls:CustomButton Text="Password protected" />
+            <controls:CustomButton Text="Dynamic (theme/ text)" />
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,9 +6,9 @@
              Title="BasicViewerPage">
     <Grid RowDefinitions="*,*">
         <WebView Grid.Row="0" Source="pdfjs/web/viewer.html?file=../../Dissertation.pdf" />
-        <!--<hwv:HybridWebView Grid.Row="1"
+        <hwv:HybridWebView Grid.Row="1"
                            HybridAssetRoot="pdfjs/web/"
                            MainFile="viewer.html"
-                           StartPath="?file=../../Dissertation.pdf" />-->
+                           StartPath="?file=../../Dissertation.pdf" />
     </Grid>
 </ContentPage>

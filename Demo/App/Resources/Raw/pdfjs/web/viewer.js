@@ -360,6 +360,8 @@
         function getPDFFileNameFromURL(url) {
             var defaultFilename = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'document.pdf';
 
+            
+
             if (isDataSchema(url)) {
                 console.warn('getPDFFileNameFromURL: ' + 'ignoring "data:" URL for performance reasons.');
                 return defaultFilename;
@@ -1898,6 +1900,9 @@
             var queryString = document.location.search.substring(1);
             var params = (0, _ui_utils.parseQueryString)(queryString);
             file = 'file' in params ? params.file : appConfig.defaultUrl;
+
+            console.log('File: '+ file);
+
             validateFileURL(file);
             var waitForBeforeOpening = [];
             var fileInput = document.createElement('input');
